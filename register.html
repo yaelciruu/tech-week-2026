@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Tech Week 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="registration-page">
+
+    <header class="site-header">
+
+        <a href="index.html" class="school-brand">
+            <img src="images/stu-logo.png"
+                 alt="Saint Timothy University logo">
+
+            <img src="images/ccs-logo.png"
+                 alt="College of Computer Studies logo">
+
+            <div>
+                <p>Saint Timothy University</p>
+                <strong>College of Computer Studies</strong>
+            </div>
+        </a>
+
+        <nav>
+            <a href="index.html">Return to Event</a>
+        </nav>
+
+    </header>
+
+    <main class="registration-container">
+
+        <section class="registration-introduction">
+
+            <p class="section-label">Registration portal</p>
+
+            <h1>Join Tech Week 2026</h1>
+
+            <p>
+                Complete the registration form to participate in the
+                technology exhibits, workshops, and competitions.
+            </p>
+
+            <div class="registration-details">
+
+                <div>
+                    <span>Event Date</span>
+                    <strong>October 14–16, 2026</strong>
+                </div>
+
+                <div>
+                    <span>Venue</span>
+                    <strong>STU Innovation Hall</strong>
+                </div>
+
+                <div>
+                    <span>Hosted By</span>
+                    <strong>College of Computer Studies</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-panel">
+
+            <div class="form-heading">
+                <p>Participant Information</p>
+                <span>All fields marked with * are required.</span>
+            </div>
+
+            <form action="thankyou.html" method="get">
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+                        <label for="full-name">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="fullName"
+                            placeholder="Enter your complete name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-number">
+                            Contact Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contact-number"
+                            name="contactNumber"
+                            placeholder="09XXXXXXXXX"
+                            pattern="09[0-9]{9}"
+                            maxlength="11"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="participant-type">
+                            Participant Type *
+                        </label>
+
+                        <select
+                            id="participant-type"
+                            name="participantType"
+                            required
+                        >
+                            <option value="" selected disabled>
+                                Select participant type
+                            </option>
+
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Tech Enthusiast">
+                                Tech Enthusiast
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school-organization">
+                            School or Organization *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="school-organization"
+                            name="schoolOrganization"
+                            placeholder="Enter school or organization"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="activity">
+                            Primary Activity Interest *
+                        </label>
+
+                        <select
+                            id="activity"
+                            name="activity"
+                            required
+                        >
+                            <option value="" selected disabled>
+                                Choose an activity
+                            </option>
+
+                            <option value="Technology Exhibits">
+                                Technology Exhibits
+                            </option>
+
+                            <option value="Workshops">
+                                Workshops
+                            </option>
+
+                            <option value="Competitions">
+                                Competitions
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">
+                            Questions or Special Requests
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Optional"
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <label class="agreement">
+                    <input type="checkbox" required>
+
+                    <span>
+                        I confirm that the information I provided is
+                        correct and I agree to register for Tech Week 2026.
+                    </span>
+                </label>
+
+                <button type="submit" class="submit-button">
+                    Submit Registration
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Saint Timothy University —
+            College of Computer Studies
+        </p>
+    </footer>
+
+</body>
+</html>
