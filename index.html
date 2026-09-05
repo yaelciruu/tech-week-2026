@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Tech Week 2026 | Saint Timothy University</title>
-    <meta name="description"
-          content="Register for Tech Week 2026 of the College of Computer Studies.">
+
+    <meta
+        name="description"
+        content="Register for Tech Week 2026 of the College of Computer Studies."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,138 +23,304 @@
 
     <!-- Navigation -->
     <header class="site-header">
-        <div class="school-brand">
-            <img src="images/stu-logo.png" alt="Saint Timothy University logo">
-            <img src="images/ccs-logo.png" alt="College of Computer Studies logo">
+
+        <a href="index.html" class="school-brand">
+
+            <img
+                src="images/stu-logo.png"
+                alt="Saint Timothy University logo"
+            >
+
+            <img
+                src="images/ccs-logo.png"
+                alt="College of Computer Studies logo"
+            >
 
             <div>
                 <p>Saint Timothy University</p>
                 <strong>College of Computer Studies</strong>
             </div>
-        </div>
+
+        </a>
 
         <nav>
             <a href="#about">About</a>
             <a href="#activities">Activities</a>
             <a href="#event-details">Event Details</a>
-            <a href="register.html" class="nav-register">Register</a>
+
+            <a href="register.html" class="nav-register">
+                Register
+            </a>
         </nav>
+
     </header>
+
 
     <main>
 
+        <!-- Video Landing-Page Banner -->
         <section class="hero">
 
-    <div class="video-banner">
+            <div class="video-banner">
 
-        <video
-            autoplay
-            muted
-            loop
-            playsinline
-            poster="images/landing-page-banner.png"
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    poster="images/landing-page-banner.png"
+                >
+                    <source
+                        src="videos/landing-page-video.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+                </video>
+
+                <!-- Invisible link positioned over
+                     the Register Now button in the video -->
+                <a
+                    href="register.html"
+                    class="video-register-hotspot"
+                    aria-label="Register for Tech Week 2026"
+                ></a>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Tech Week -->
+        <section
+            id="about"
+            class="tech-overview reveal-section"
         >
-            <source
-                src="videos/landing-page-video.mp4"
-                type="video/mp4"
+
+            <div class="about-heading">
+
+                <p class="section-label">
+                    Event Briefing
+                </p>
+
+                <h2>About Tech Week</h2>
+
+                <div class="about-signal">
+                    <span></span>
+
+                    Same passion.<br>
+                    Bigger possibilities.
+                </div>
+
+            </div>
+
+            <div class="about-description">
+
+                <p>
+                    Tech Week 2026 is the annual flagship event of
+                    the College of Computer Studies at Saint Timothy
+                    University. It brings together students, educators,
+                    and technology enthusiasts to explore emerging
+                    technologies, showcase creative work, and sharpen
+                    their skills through hands-on learning.
+                </p>
+
+                <p>
+                    Join us as we build a more creative, connected,
+                    and innovative future—together.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Interactive Activity Cards -->
+        <section
+            id="activities"
+            class="activity-showcase"
+        >
+
+            <!-- Tech Exhibits -->
+            <article
+                class="activity-card interactive-card reveal-section"
             >
 
-            Your browser does not support video.
-        </video>
+                <div class="card-number">01</div>
 
-            <a
-            href="register.html"
-            class="video-register-hotspot"
-            aria-label="Register for Tech Week 2026"
-        ></a>
+                <div class="activity-visual">
+                    <img
+                        src="images/tech-exhibits.png"
+                        alt="Futuristic technology exhibition booth"
+                        loading="lazy"
+                    >
+                </div>
 
-    </div>
+                <h3>Tech Exhibits</h3>
 
-</section>
+                <p>
+                    Discover innovative projects, prototypes,
+                    applications, and emerging technologies.
+                </p>
 
-        <!-- About -->
-        <section id="about" class="content-section">
-            <p class="section-label">College of Computer Studies presents</p>
+                <details class="card-details">
 
-            <h1>Discover the future at Tech Week 2026</h1>
+                    <summary>
+                        Learn more <span>→</span>
+                    </summary>
 
-            <p>
-                Join students, teachers, and technology enthusiasts for three
-                exciting days of innovation, creativity, and competition.
-                Discover new ideas, develop your skills, and connect with
-                fellow Timotheans who share your passion for technology.
-            </p>
+                    <p>
+                        Explore interactive displays and creative
+                        solutions developed by students from the
+                        College of Computer Studies.
+                    </p>
+
+                </details>
+
+            </article>
+
+
+            <!-- Workshops -->
+            <article
+                class="activity-card interactive-card reveal-section"
+            >
+
+                <div class="card-number">02</div>
+
+                <div class="activity-visual">
+                    <img
+                        src="images/workshops.png"
+                        alt="Futuristic coding workshop"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Workshops</h3>
+
+                <p>
+                    Gain practical knowledge through interactive
+                    sessions and guided technology activities.
+                </p>
+
+                <details class="card-details">
+
+                    <summary>
+                        Learn more <span>→</span>
+                    </summary>
+
+                    <p>
+                        Participate in hands-on learning sessions
+                        designed to introduce useful tools, ideas,
+                        and digital skills.
+                    </p>
+
+                </details>
+
+            </article>
+
+
+            <!-- Competitions -->
+            <article
+                class="activity-card interactive-card reveal-section"
+            >
+
+                <div class="card-number">03</div>
+
+                <div class="activity-visual">
+                    <img
+                        src="images/competitions.png"
+                        alt="Futuristic competition trophy"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Competitions</h3>
+
+                <p>
+                    Put your abilities to the test through exciting
+                    technology-based challenges.
+                </p>
+
+                <details class="card-details">
+
+                    <summary>
+                        Learn more <span>→</span>
+                    </summary>
+
+                    <p>
+                        Compete individually or with a team while
+                        demonstrating creativity, strategy, and
+                        problem-solving.
+                    </p>
+
+                </details>
+
+            </article>
+
         </section>
 
-        <!-- Activities -->
-        <section id="activities" class="content-section">
-            <p class="section-label">What to expect</p>
-            <h2>Explore, create, and innovate</h2>
-
-            <div class="activity-container">
-
-                <article class="activity-card">
-                    <h3>Technology Exhibits</h3>
-                    <p>
-                        Explore creative projects and innovative technologies
-                        developed by students.
-                    </p>
-                </article>
-
-                <article class="activity-card">
-                    <h3>Workshops</h3>
-                    <p>
-                        Participate in hands-on sessions and learn practical
-                        technology skills.
-                    </p>
-                </article>
-
-                <article class="activity-card">
-                    <h3>Competitions</h3>
-                    <p>
-                        Challenge your abilities through exciting programming,
-                        gaming, and technology competitions.
-                    </p>
-                </article>
-
-            </div>
-        </section>
 
         <!-- Event Details -->
-        <section id="event-details" class="event-details">
+        <section
+            id="event-details"
+            class="event-details reveal-section"
+        >
+
             <div>
-                <p class="section-label">Save the date</p>
+
+                <p class="section-label">
+                    Save the date
+                </p>
+
                 <h2>October 14–16, 2026</h2>
+
                 <p>STU Innovation Hall</p>
+
             </div>
 
-            <a href="register.html" class="primary-button">
+            <a
+                href="register.html"
+                class="primary-button"
+            >
                 Register for Tech Week
             </a>
+
         </section>
 
-        <!-- Clickable Banner Advertisement -->
-        <aside class="advertisement">
-            <p class="ad-label">Advertisement</p>
 
-            <a href="register.html"
-               aria-label="Register for Tech Week 2026">
+        <!-- Clickable Event Promotion -->
+        <aside class="event-promo reveal-section">
+
+            <p class="promo-label">
+                ADVERTISEMENT
+            </p>
+
+            <a
+                href="register.html"
+                aria-label="Register for Tech Week 2026"
+            >
                 <img
-                    src="images/banner-ad.png"
-                    alt="Tech Week 2026 registration banner advertisement"
+                    src="images/event-promo.png"
+                    alt="Tech Week 2026 registration promotion"
+                    loading="lazy"
                 >
             </a>
+
         </aside>
 
     </main>
 
+
     <footer>
         <p>
             © 2026 Saint Timothy University —
-            College of Computer Studies
+            College of Computer Studies.
         </p>
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
