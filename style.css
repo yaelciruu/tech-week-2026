@@ -1150,3 +1150,112 @@ nav a,
         border-bottom: 1px solid rgba(0, 229, 245, 0.25);
     }
 }
+
+.site-header,
+.activity-card,
+.event-details,
+.advertisement,
+.form-panel,
+.success-panel {
+    background: linear-gradient(
+        135deg,
+        rgba(13, 52, 61, 0.52),
+        rgba(2, 12, 17, 0.72)
+    );
+
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+
+    border: 1px solid rgba(142, 248, 255, 0.25);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        inset 0 0 25px rgba(0, 229, 245, 0.035),
+        0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Stronger glass effect when hovering */
+.activity-card:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(18, 77, 88, 0.65),
+        rgba(3, 21, 28, 0.82)
+    );
+
+    border-color: rgba(142, 248, 255, 0.7);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 0 28px rgba(0, 229, 245, 0.2);
+}
+
+/* ==============================
+   SLIDING BANNER SHINE
+   ============================== */
+
+.video-banner {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Moving light */
+.video-banner::after {
+    content: "";
+
+    position: absolute;
+    top: -30%;
+    left: -45%;
+
+    width: 24%;
+    height: 160%;
+
+    z-index: 3;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.08),
+        rgba(142, 248, 255, 0.65),
+        rgba(255, 255, 255, 0.12),
+        transparent
+    );
+
+    filter: blur(5px);
+    transform: skewX(-20deg);
+    opacity: 0;
+
+    transition:
+        left 0.9s ease,
+        opacity 0.25s ease;
+}
+
+/* Shine slides across when hovered */
+.video-banner:hover::after {
+    left: 125%;
+    opacity: 1;
+}
+
+/* Slight banner glow */
+.video-banner {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.video-banner:hover {
+    border-color: var(--cyan-light);
+
+    box-shadow:
+        0 0 15px rgba(0, 229, 245, 0.3),
+        0 0 50px rgba(0, 229, 245, 0.18);
+
+    transform: translateY(-3px);
+}
+
+/* Keep the clickable Register area above the shine */
+.video-register-hotspot {
+    z-index: 5;
+}
